@@ -1,6 +1,7 @@
 import "./App.css";
 import Drum from "./Drum.tsx";
 import { AudioClip } from "./types.ts";
+import { Header } from "./Header.tsx";
 
 const audioClips: AudioClip[] = [
   {
@@ -74,6 +75,8 @@ function App() {
 
 
   return (
+    <>
+    <Header />
     <div className="container" id="drum-machine" onKeyDown={playAudio}>
       <h1>Drum Machine</h1>
       <div className="whole-drum">
@@ -85,6 +88,7 @@ function App() {
       <p> Designed by Dev Gracogen</p>
 
     </div>
+    </>
 
   );
 
