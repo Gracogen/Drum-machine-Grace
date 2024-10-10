@@ -75,15 +75,20 @@ function App() {
 
   return (
     <div className="container" id="drum-machine" onKeyDown={playAudio}>
-      <h1>FCC Drum Machine</h1>
+      <h1>Drum Machine</h1>
       <div className="whole-drum">
         {audioClips.map((clip) => (
           <Drum audioClip={clip} key={clip.keyTrigger} />
         ))}
       </div>
       <div id="display"></div>
+      <p> Designed by Dev Gracogen</p>
+
     </div>
+
   );
+
+
 }
 
 export default App;
